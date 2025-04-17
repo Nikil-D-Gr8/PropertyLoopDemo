@@ -27,12 +27,22 @@ pip install -r requirements.txt
 ```
 GEMINI_API_KEY=your_key_here
 ```
+[Get API key here](https://aistudio.google.com/app/apikey)
 
 5. Run the server:
 ```bash
 python app.py
 ```
 The server will start at http://localhost:5000
+
+##IMPORTANT
+
+6. Populate the Vector Database:
+```bash
+python document_processor.py
+```
+
+
 
 ## Frontend Setup (React App) [ create in a new terminal]
 
