@@ -60,7 +60,7 @@ def process_and_store_document(
         model_name="sentence-transformers/all-MiniLM-L6-v2"
     )
 
-    # Create FAISS index
+    # Create FAISS index based on sample
     embedding_dim = len(embeddings.embed_query("test"))
     index = faiss.IndexFlatL2(embedding_dim)
 

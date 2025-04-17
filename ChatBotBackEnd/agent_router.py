@@ -1,5 +1,5 @@
 from typing import List, Optional, Dict
-from langchain_core.messages import BaseMessage, AIMessage
+from langchain_core.messages import BaseMessage
 from text_agent import TextGenerationService
 from image_agent import PropertyIssueDetectionAgent
 from RAGsystem import RAGSystem

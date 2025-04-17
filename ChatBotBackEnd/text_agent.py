@@ -27,7 +27,7 @@ Previous conversation:
 
 Current user message: {user_message}
 
-Please provide a helpful response based on the above information.
+Please provide a helpful response based on the above information.Stick to property related topics only and dont deviate.
 """
             # Generate response using Gemini
             response = self.model.generate_content(prompt)

@@ -20,7 +20,7 @@ class RAGSystem:
                 self.vectorstore = FAISS.load_local(
                     "vector_store_db", 
                     self.embeddings,
-                    allow_dangerous_deserialization=True  # Added this parameter
+                    allow_dangerous_deserialization=True  
                 )
                 print("Vector store loaded successfully")
             else:
@@ -29,7 +29,7 @@ class RAGSystem:
             # Initialize the retriever
             self.retriever = self.vectorstore.as_retriever(
                 search_type="similarity",
-                search_kwargs={"k": 3}  # Return top 3 most relevant documents
+                search_kwargs={"k": 5}  
             )
         except Exception as e:
             print(f"Error loading documents: {e}")
