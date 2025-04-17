@@ -111,6 +111,12 @@ Process new messages and generate responses.
 python app.py
 ```
 
+### Populating Vector Database
+
+```bash
+python document_processor.py
+```
+
 ## Using the Test Client
 
 The `test_client.py` provides a command-line interface for testing the chat API. It supports both text-only conversations and image+text queries.
